@@ -346,7 +346,6 @@ void m5core2UI::previousPage()
   }
   _pages[_currentPage]->enableButtons();
   _pages[_currentPage]->printScreen();
-  _header.setLeft("Page " + String(_currentPage + 1));
   _header.drawObject();
 }
 
@@ -362,7 +361,6 @@ void m5core2UI::nextPage()
   }
   _pages[_currentPage]->enableButtons();
   _pages[_currentPage]->printScreen();
-  _header.setLeft("Page " + String(_currentPage + 1));
   _header.drawObject();
 }
 
